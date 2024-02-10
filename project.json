@@ -1,0 +1,88 @@
+{
+  "name": "FrozenChlorine",
+  "projectId": "af94cdb4-101f-46ed-a796-3ee0cdcdf0f5",
+  "description": "RPA UiPath process automating the Windows Calculator App",
+  "main": "StandardCalculator.xaml",
+  "dependencies": {
+    "LuckyLawrencium": "0.0.1",
+    "UiPath.Excel.Activities": "[2.20.2]",
+    "UiPath.System.Activities": "[23.10.2]",
+    "UiPath.Testing.Activities": "[23.10.0]",
+    "UiPath.UIAutomation.Activities": "[23.10.3]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.10.0.0",
+  "projectVersion": "0.0.1",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": [
+        "RnD/RnD_gitkeep.xaml"
+      ]
+    },
+    "processOptions": {
+      "ignoredFiles": [
+        "RnD/RnD_ObjRepTests.xaml",
+        "RnD/RnD_Localization.xaml"
+      ]
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3ca449d9-71d4-41c4-aebe-35716e4b84ce",
+        "dataVariationFilePath": ".variations\\Testdata_StandardOperations.json",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\TestCase_Standard.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1beafcc0-2160-41b7-b145-ca08e6542b7c",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\TestCase_Canary.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "StandardCalculator.xaml",
+      "uniqueId": "2d8020ee-2064-405a-a8da-392bd5a244fd",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "CanaryUserInterface.xaml",
+      "uniqueId": "c2f51286-a120-47ff-870a-971ad2703aa8",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
