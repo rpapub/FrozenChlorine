@@ -4,7 +4,7 @@
   "description": "RPA UiPath process automating the Windows Calculator App",
   "main": "StandardCalculator.xaml",
   "dependencies": {
-    "LuckyLawrencium": "0.0.1",
+    "LuckyLawrencium": "0.1.3",
     "UiPath.Excel.Activities": "[2.20.2]",
     "UiPath.System.Activities": "[23.10.2]",
     "UiPath.Testing.Activities": "[23.10.0]",
@@ -14,7 +14,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.10.0.0",
-  "projectVersion": "0.0.1",
+  "projectVersion": "0.2.1",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -61,7 +61,7 @@
         "testCaseId": "1beafcc0-2160-41b7-b145-ca08e6542b7c",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "Tests\\TestCase_Canary.xaml"
+        "fileName": "Tests\\TestCase_PathKeeper.xaml"
       }
     ],
     "saveToCloud": false
@@ -75,8 +75,8 @@
       "output": []
     },
     {
-      "filePath": "CanaryUserInterface.xaml",
-      "uniqueId": "c2f51286-a120-47ff-870a-971ad2703aa8",
+      "filePath": "PathKeeper.xaml",
+      "uniqueId": "21b19605-b935-487b-b829-06fdb3ae9a19",
       "input": [],
       "output": []
     }
