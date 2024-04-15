@@ -5,7 +5,7 @@
     <x:Property Name="DecimalSeparator" Type="InArgument(x:String)" />
     <x:Property Name="Number" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>771,3327</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>808,3111</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -104,38 +104,38 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="hij&#xD;&#xA;" sap:VirtualizedContainerService.HintSize="744,3262" sap2010:WorkflowViewState.IdRef="Sequence_21">
+  <Sequence sap2010:Annotation.AnnotationText="hij&#xA;" sap:VirtualizedContainerService.HintSize="784,3046" sap2010:WorkflowViewState.IdRef="Sequence_21">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="682,1800" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[CharacterList]">
+    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="722,1956" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[CharacterList]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="currentItem" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="648,1583" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="688,1752" sap2010:WorkflowViewState.IdRef="Sequence_16">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard sap2010:Annotation.AnnotationText="Never Open, Never Close" AttachMode="ByInstance" CloseMode="Never" DisplayName="Standard" sap:VirtualizedContainerService.HintSize="606,1495" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="535d6259-5ece-417b-8e81-d982a795e8ec" Version="V2">
+            <uix:NApplicationCard sap2010:Annotation.AnnotationText="Never Open, Never Close" AttachMode="ByInstance" CloseMode="Never" DisplayName="Standard" sap:VirtualizedContainerService.HintSize="626,1667" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="535d6259-5ece-417b-8e81-d982a795e8ec" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572,1204" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1353" sap2010:WorkflowViewState.IdRef="Sequence_15">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[currentItem IsNot Nothing AndAlso currentItem.ToString.Length = 1 AndAlso Char.IsDigit(CChar(currentItem.ToString))]" DisplayName="If Number" sap:VirtualizedContainerService.HintSize="510,580" sap2010:WorkflowViewState.IdRef="If_3">
+                    <If Condition="[currentItem IsNot Nothing AndAlso currentItem.ToString.Length = 1 AndAlso Char.IsDigit(CChar(currentItem.ToString))]" DisplayName="If Number" sap:VirtualizedContainerService.HintSize="530,696" sap2010:WorkflowViewState.IdRef="If_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -143,7 +143,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence sap:VirtualizedContainerService.HintSize="476,398" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,418" sap2010:WorkflowViewState.IdRef="Sequence_11">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="Number" />
                           </Sequence.Variables>
@@ -152,7 +152,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap2010:Annotation.AnnotationText="expected by Object Repository descriptor library" DisplayName="Assign Number variable" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="Assign_8">
+                          <Assign sap2010:Annotation.AnnotationText="expected by Object Repository descriptor library" DisplayName="Assign Number variable" sap:VirtualizedContainerService.HintSize="434,153" sap2010:WorkflowViewState.IdRef="Assign_8">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[Number]</OutArgument>
                             </Assign.To>
@@ -165,18 +165,24 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </Assign>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'NumberParameterized'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" Version="V3">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'NumberParameterized'" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="535d6259-5ece-417b-8e81-d982a795e8ec" Version="V3">
                             <uix:NClick.Target>
-                              <uix:TargetAnchorable ContentHash="CDSJiiu0mE-6ml5xU2pStQ" CvElementArea="90, 477, 78, 52" CvTextArea="123, 495, 12, 17" CvTextArgument="0" CvType="Button" DesignTimeRectangle="12, 425, 77, 51" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'1'" FullSelectorArgument="[string.Format(&quot;&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' name='Number pad' /&gt;&lt;uia automationid='num{0}Button' cls='Button' /&gt;&quot;, Number)]" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' name='Number pad' /&gt;&lt;uia automationid='num1Button' cls='Button' name='One' role='button' check:fulltext='1' /&gt;" Guid="b7cc6b52-3858-4c54-b2ac-6601300a266e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFEAAAA3CAYAAAB0IqZxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFjSURBVHhe7dtRioIAFIXh2Uc7aAktxR24oPbRQtqBGfRQkFoKgg+G3OGKI6nM1OR5mIb/hwMFPn3YW/ejLEtj8waiYBPEoigsSRI7Ho9stCzLWp+x2QDxfD7b5XKxuq6NprmL+7jTvVuP6ML+AD1u/Eb2iGma2u126x6jn/I30r0miP6bp+dqmsZOpxOIc3MvEGcGoiAQBYEoCERBIAoCURCIgkAUBKIgEAWBKAhEQSAKeivE9XptQRB03/5Ob4G42WxstVrZYrEA8ZXCMLTlctm/hSC+0OFwsOv12n4GURCIgkAUBKIgEAWBKAhEQSAKAlEQiP84EAWBKAhEQSAKAlEQiIJAFASiIBAFgSgIREEgCgJxZt9eVPl5Lrd9z+W3fX4kOUHM87yFpMf5qa57TRB9URS1/z6oqqp7nO5zF/eJ47g38w0QfX6Cut/vbbvdstF2u93gRPdrE0T2+4E4e6V9Au+ucqoAEsk6AAAAAElFTkSuQmCC" InformativeScreenshot="999f88f1c2c1ee560958cb27dc6ca3cb.png" Reference="VghXUu22RkytYUIM7zleTQ/qK8v0eWueUybDtl7RMKlGw" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='Calculator' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                              <uix:TargetAnchorable ContentHash="wzmJKoZ1CkisLLkf_U31aw" CvElementArea="90, 477, 78, 52" CvTextArea="123, 495, 12, 17" CvTextArgument="0" CvType="Button" DesignTimeRectangle="96, 478, 83, 51" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'NumberParameterized'" FullSelectorArgument="[string.Format(&quot;&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' /&gt;&lt;uia automationid='num{0}Button' cls='Button' /&gt;&quot;, Number)]" FuzzySelectorArgument="[string.Format(&quot;&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' /&gt;&lt;uia automationid='num{0}Button' cls='Button' role='button' check:fulltext='0' /&gt;&quot;, Number)]" Guid="b7cc6b52-3858-4c54-b2ac-6601300a266e" InformativeScreenshot="546e86f36f8d350daa17eaeff9a550cc.png" Reference="VghXUu22RkytYUIM7zleTQ/qK8v0eWueUybDtl7RMKlGw" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                             </uix:NClick.Target>
                           </uix:NClick>
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_12" />
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
                       </If.Else>
                     </If>
-                    <If sap2010:Annotation.AnnotationText="ParseTermToList ensures InstalledUICulture.NumberFormat.NumberDecimalSeparator" Condition="[currentItem.ToString.Equals(System.Globalization.CultureInfo.InstalledUICulture.NumberFormat.NumberDecimalSeparator)]" DisplayName="If DecimalSeparator" sap:VirtualizedContainerService.HintSize="510,469" sap2010:WorkflowViewState.IdRef="If_4">
+                    <If sap2010:Annotation.AnnotationText="ParseTermToList ensures InstalledUICulture.NumberFormat.NumberDecimalSeparator" Condition="[currentItem.ToString.Equals(System.Globalization.CultureInfo.InstalledUICulture.NumberFormat.NumberDecimalSeparator)]" DisplayName="If DecimalSeparator" sap:VirtualizedContainerService.HintSize="530,570" sap2010:WorkflowViewState.IdRef="If_4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -185,21 +191,27 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence sap:VirtualizedContainerService.HintSize="376,245" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_13">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'decimalSeparator'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" Version="V3">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'decimalSeparator'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="535d6259-5ece-417b-8e81-d982a795e8ec" Version="V3">
                             <uix:NClick.Target>
-                              <uix:TargetAnchorable ContentHash="Arsnnn8Gj0yFG3dx2Pjwyw" CvElementArea="169, 477, 78, 53" CvType="Button" DesignTimeRectangle="170, 478, 76, 51" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="','" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' name='Number pad' /&gt;&lt;uia automationid='decimalSeparatorButton' cls='Button' name='Decimal separator' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' name='Number pad' /&gt;&lt;uia automationid='decimalSeparatorButton' cls='Button' name='Decimal separator' role='button' check:fulltext=',' /&gt;" Guid="a9235fba-2403-4a10-86e8-c627ce19410c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFAAAAA3CAYAAACb4M1PAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFlSURBVHhe7dtNqoIAFIbhu4920JLciQtpOS0gcOooCxoY+BMKggMjzuWIRSYV934ThfeFbyA4erBJcH6apjH2/wEobgJY17XleW5pmrKnlWXZ27x6jQCzLLPL5WJd1xmNcxO3caNnsweg6/oL9LnXL/EBWBSFXa/X4TV6l3+JbjUB9N85fe92u9n5fAZQya0AFAJQDEAxAMUAFANQDEAxAMUAFANQDEAxAMUAFANQDEAxAMUAFANQDEAxAMUAFANQDEAxAMUAFFsMYBAEFobh8DSfFgO4Wq1su90OT/NpEYC73c7W6/XwNK8WAbjZbGb58/UWARjHsZ1Op+FpXi0CcM4BKAagGIBiAIoBKAagGIBiAIoBKAag0NtLJT9x5Vbue34r5weHE8CqqnpE+pyfu7rVBNC33+/7f0Dath1ep3tu4jaHw+Hh5RsB+vyU83g8WhRF7GlJkozOXO+bALK/DUBpjf0C24vGzEDQZhIAAAAASUVORK5CYII=" InformativeScreenshot="fd02e682ed5bf7054785b25910a6dd02.png" Reference="VghXUu22RkytYUIM7zleTQ/bh-I01021E2dOqInSALUrg" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='Calculator' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                              <uix:TargetAnchorable ContentHash="CYLN2jr_fESmB7ItSSumLw" CvElementArea="169, 477, 78, 53" CvType="Button" DesignTimeRectangle="181, 478, 82, 51" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'decimalSeparator'" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' /&gt;&lt;uia automationid='decimalSeparatorButton' cls='Button' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='NumberPad' cls='NamedContainerAutomationPeer' /&gt;&lt;uia automationid='decimalSeparatorButton' cls='Button' role='button' check:fulltext=',' /&gt;" Guid="a9235fba-2403-4a10-86e8-c627ce19410c" InformativeScreenshot="adc0b575935a98708a2d19aefba29daf.png" Reference="VghXUu22RkytYUIM7zleTQ/bh-I01021E2dOqInSALUrg" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                             </uix:NClick.Target>
                           </uix:NClick>
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence sap2010:WorkflowViewState.IdRef="Sequence_14" />
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
                       </If.Else>
                     </If>
                   </Sequence>
@@ -225,19 +237,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEach>
-    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Never Open, Never Close" AttachMode="ByInstance" CloseMode="Never" DisplayName="Standard" sap:VirtualizedContainerService.HintSize="682,864" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="Never" ScopeGuid="f97a24d2-eb11-4ffc-b7df-aa77ae9f437d" Version="V2">
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Never Open, Never Close" AttachMode="ByInstance" CloseMode="Never" DisplayName="Standard" sap:VirtualizedContainerService.HintSize="722,960" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="Never" ScopeGuid="f97a24d2-eb11-4ffc-b7df-aa77ae9f437d" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="472,542" sap2010:WorkflowViewState.IdRef="Sequence_19">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,615" sap2010:WorkflowViewState.IdRef="Sequence_19">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If Condition="[Negate]" DisplayName="If Negate" sap:VirtualizedContainerService.HintSize="410,427" sap2010:WorkflowViewState.IdRef="If_5">
+            <If Condition="[Negate]" DisplayName="If Negate" sap:VirtualizedContainerService.HintSize="450,528" sap2010:WorkflowViewState.IdRef="If_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -245,21 +257,27 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence sap:VirtualizedContainerService.HintSize="376,245" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_17">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Negate'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Negate'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f97a24d2-eb11-4ffc-b7df-aa77ae9f437d" Version="V3">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable ContentHash="8oy3HWevsUmO1zrnpnpWnA" CvElementArea="11, 477, 78, 53" CvTextArea="41, 495, 19, 16" CvTextArgument="+/-" CvType="Button" DesignTimeRectangle="12, 478, 77, 51" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="''" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='negateButton' cls='Button' name='Positive negative' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='negateButton' cls='Button' name='Positive negative' role='button' check:fulltext='' /&gt;" Guid="90e9d87f-df61-4ae8-b53a-a6904383a79f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFEAAAA3CAYAAAB0IqZxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHXSURBVHhe7dvdicJAFIbh7cMOLMESLMEOLCEd2IAV2IANWIBgB0bBCwX/hUAuFDnyDRmJSVzdzYGcge+FAwZy9ZBhojI/SZIIp94QUWFKiJfLRXa7nazXa05hDoeD8ymavSBut1s5Ho9yvV6FlYMLfOCUd3siQhg3sM8Vn8gn4n6/l9vtlt3GfgtPJLxKiFjz7Lvu97tsNhsi1g1eRKwZERUiokJEVIiIChFRISIqRESFiKgQERUiokJEVIiICplFXK1Wbqo6nU4ynU6zq+YzizgcDt1UNR6PpdfrZVfNFyRit9t1kFYyh+jx8KRh/LVf2ljG7XbbfbZScIhRFMlgMHCfrWQO0efx8mFDabVabzecpgoKcTQaSb/fz67sZBaxqk6nI5PJJLuyUzCIwAOixYJBxDLGckbYof1yz09Trz1BIGIjwYaCjQUR8R8BCK82VgsCES/Xlr4rFzOPaO3HhqqCeBKtR0SFiKgQERUiokJEVIiIChFRISIqRESFiKgQERUiokJErNnbE1U4nsuzfd+Fs304JFlCPJ/PDpJ9Dkd14VVCxMznc/ffRpqm2e0sH1zgs1gsnmaYF0QMjqAul0uZzWacwsRx/HJE108JkfP3IWLtSeQBSCZb04jiWqkAAAAASUVORK5CYII=" InformativeScreenshot="b56c23b30ef755b67ec2c0fd6d1bf2d5.png" Reference="VghXUu22RkytYUIM7zleTQ/TyjzMm9Ot0O5xTnMORKEoQ" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='Calculator' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      <uix:TargetAnchorable ContentHash="Paj3Ywao6Uq4BIQwLJii0g" CvElementArea="11, 477, 78, 53" CvTextArea="41, 495, 19, 16" CvTextArgument="+/-" CvType="Button" DesignTimeRectangle="12, 478, 82, 51" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Negate'" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='negateButton' cls='Button' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='negateButton' cls='Button' role='button' check:fulltext='' /&gt;" Guid="90e9d87f-df61-4ae8-b53a-a6904383a79f" InformativeScreenshot="cf55259a2e1a68f7ae3bc6fbe7d9b436.png" Reference="VghXUu22RkytYUIM7zleTQ/TyjzMm9Ot0O5xTnMORKEoQ" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                     </uix:NClick.Target>
                   </uix:NClick>
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_18" />
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
               </If.Else>
             </If>
           </Sequence>
