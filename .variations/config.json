@@ -3,6 +3,10 @@
     {
       "filePath": ".variations\\Testdata_StandardOperations.json",
       "dataVariationType": "File"
+    },
+    {
+      "filePath": ".variations\\Testdata_Unit_ParseTermToList.json",
+      "dataVariationType": "File"
     }
   ]
 }

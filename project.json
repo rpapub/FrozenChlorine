@@ -14,7 +14,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.10.0.0",
-  "projectVersion": "0.2.1",
+  "projectVersion": "0.2.2",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -51,17 +51,25 @@
     "fileInfoCollection": [
       {
         "editingStatus": "InProgress",
-        "testCaseId": "3ca449d9-71d4-41c4-aebe-35716e4b84ce",
-        "dataVariationFilePath": ".variations\\Testdata_StandardOperations.json",
-        "testCaseType": "TestCase",
-        "fileName": "Tests\\TestCase_Standard.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
         "testCaseId": "1beafcc0-2160-41b7-b145-ca08e6542b7c",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\TestCase_PathKeeper.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "025c61cf-9dc9-43e8-a49f-dc143230bfa5",
+        "dataVariationFilePath": ".variations\\Testdata_Unit_ParseTermToList.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\TestCase_Unit_ParseTermToList.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3ca449d9-71d4-41c4-aebe-35716e4b84ce",
+        "dataVariationFilePath": ".variations\\Testdata_StandardOperations.json",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\TestCase_EndToEnd_StandardCalculator.xaml"
       }
     ],
     "saveToCloud": false

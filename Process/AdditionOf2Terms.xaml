@@ -10,7 +10,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>771,2999</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>687,2986</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Addition_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -54,76 +54,74 @@
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
     <sco:Collection x:TypeArguments="AssemblyReference">
-      <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
-      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
-      <AssemblyReference>System</AssemblyReference>
-      <AssemblyReference>System.Linq</AssemblyReference>
       <AssemblyReference>System.Drawing</AssemblyReference>
-      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
-      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>System.Xaml</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.ObjectModel</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
-      <AssemblyReference>PresentationFramework</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
-      <AssemblyReference>WindowsBase</AssemblyReference>
-      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
-      <AssemblyReference>UiPath.Workflow</AssemblyReference>
-      <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Memory.Data</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
-      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
-      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Workflow Name: Addition Workflow&#xD;&#xA;Description: &#xD;&#xA;    This UiPath workflow automates addition operations in the Windows Calculator application. It is designed to handle inputs in different regional number formats by taking into account the specified decimal separator. The workflow consists of several key components including initialization, parsing inputs, performing the addition operation, and retrieving the result.&#xD;&#xA;&#xD;&#xA;    Key Properties:&#xD;&#xA;    - in_Config: Dictionary to pass configuration data.&#xD;&#xA;    - Term1, Term2: Input strings representing the numbers to be added.&#xD;&#xA;    - Result: Output string to store the calculation result.&#xD;&#xA;    - Operation: Input string to specify the calculator operation (not actively used in current workflow).&#xD;&#xA;    - DecimalSeparator: Input string to specify the decimal separator for number formats.&#xD;&#xA;&#xD;&#xA;    Main Activities:&#xD;&#xA;    - NApplicationCard: Opens and interacts with the Windows Calculator app.&#xD;&#xA;    - InvokeWorkflowFile: Calls sub-workflows for resetting the calculator, parsing terms, and simulating button clicks.&#xD;&#xA;    - NClick: Simulates clicks on the calculator's buttons.&#xD;&#xA;    - NGetText: Retrieves the calculated result from the calculator.&#xD;&#xA;    - Log Message: Logs the final result of the calculation.&#xD;&#xA;&#xD;&#xA;Purpose: &#xD;&#xA;    To demonstrate the automation of basic arithmetic operations using UiPath with the Windows Calculator app, showcasing handling of input terms and retrieval of results while considering different regional settings for number formats.&#xD;&#xA;&#xD;&#xA;Usage: &#xD;&#xA;    Input the terms to be added (Term1 and Term2) along with the required decimal separator format. The workflow will output the result of the addition.&#xD;&#xA;&#xD;&#xA;Author: [Your Name]&#xD;&#xA;Date: [Creation/Modification Date]" DisplayName="Addition" sap:VirtualizedContainerService.HintSize="608,2934" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Workflow Name: Addition Workflow&#xA;Description: &#xA;    This UiPath workflow automates addition operations in the Windows Calculator application. It is designed to handle inputs in different regional number formats by taking into account the specified decimal separator. The workflow consists of several key components including initialization, parsing inputs, performing the addition operation, and retrieving the result.&#xA;&#xA;    Key Properties:&#xA;    - in_Config: Dictionary to pass configuration data.&#xA;    - Term1, Term2: Input strings representing the numbers to be added.&#xA;    - Result: Output string to store the calculation result.&#xA;    - Operation: Input string to specify the calculator operation (not actively used in current workflow).&#xA;    - DecimalSeparator: Input string to specify the decimal separator for number formats.&#xA;&#xA;    Main Activities:&#xA;    - NApplicationCard: Opens and interacts with the Windows Calculator app.&#xA;    - InvokeWorkflowFile: Calls sub-workflows for resetting the calculator, parsing terms, and simulating button clicks.&#xA;    - NClick: Simulates clicks on the calculator's buttons.&#xA;    - NGetText: Retrieves the calculated result from the calculator.&#xA;    - Log Message: Logs the final result of the calculation.&#xA;&#xA;Purpose: &#xA;    To demonstrate the automation of basic arithmetic operations using UiPath with the Windows Calculator app, showcasing handling of input terms and retrieval of results while considering different regional settings for number formats.&#xA;&#xA;Usage: &#xA;    Input the terms to be added (Term1 and Term2) along with the required decimal separator format. The workflow will output the result of the addition.&#xA;&#xA;Author: Christian Prior-Mamulyan&#xA;Date: 2024-01-01" DisplayName="Addition" sap:VirtualizedContainerService.HintSize="608,2921" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Standard" sap:VirtualizedContainerService.HintSize="546,2331" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" IsIncognito="{x:Null}" OpenMode="IfNotOpen" OutUiElement="{x:Null}" ScopeGuid="88910838-f282-4e59-b5f6-03710c8bcafa" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Standard" sap:VirtualizedContainerService.HintSize="546,2326" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="88910838-f282-4e59-b5f6-03710c8bcafa" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence sap2010:Annotation.AnnotationText="Workflow to automate Windows Calculator.&#xA;&#xA;2 input argument Terms are added, taking into account a input argument DecimalSeparator." DisplayName="Do StandardCalculator Addition" sap:VirtualizedContainerService.HintSize="512,2040" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence sap2010:Annotation.AnnotationText="Workflow to automate Windows Calculator.&#xA;&#xA;2 input argument Terms are added, taking into account a input argument DecimalSeparator." DisplayName="Do StandardCalculator Addition" sap:VirtualizedContainerService.HintSize="512,2012" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="Number" />
               <Variable x:TypeArguments="x:String" Name="Term" />
@@ -134,12 +132,12 @@
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\Calculator\ResetCalculator.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="450,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" Level="{x:Null}" LogEntry="{x:Null}" LogExit="{x:Null}" Timeout="{x:Null}" UnSafe="False" WorkflowFileName="Process\Calculator\ResetCalculator.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\Calculator\ResetCalculator.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="450,153" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Process\Calculator\ResetCalculator.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <scg:Dictionary x:TypeArguments="x:String, Argument" />
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <Sequence sap2010:Annotation.AnnotationText="Sequence used to scope variables" DisplayName="Term1" sap:VirtualizedContainerService.HintSize="450,443" sap2010:WorkflowViewState.IdRef="Sequence_24">
+            <Sequence sap2010:Annotation.AnnotationText="Sequence used to scope variables" DisplayName="Term1" sap:VirtualizedContainerService.HintSize="450,483" sap2010:WorkflowViewState.IdRef="Sequence_24">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Default="False" Name="Negate" />
                 <Variable x:TypeArguments="scg:ICollection(x:Object)" Default="[New List(Of Object)]" Name="CharacterList" />
@@ -150,32 +148,20 @@
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile sap2010:Annotation.AnnotationText="Supplying Term1" ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\Datatransformation\ParseTermToList.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,144" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" Level="{x:Null}" LogEntry="{x:Null}" LogExit="{x:Null}" Timeout="{x:Null}" UnSafe="False" WorkflowFileName="Process\Datatransformation\ParseTermToList.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Supplying Term1" DisplayName="Process\Datatransformation\ParseTermToList.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,184" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Process\Datatransformation\ParseTermToList.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InArgument x:TypeArguments="x:String" x:Key="Term">
-                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Term1">
-                      <VisualBasicValue.Result>
-                        <OutArgument x:TypeArguments="x:String" />
-                      </VisualBasicValue.Result>
-                    </VisualBasicValue>
+                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Term1" />
                   </InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="DecimalSeparator">
-                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DecimalSeparator">
-                      <VisualBasicValue.Result>
-                        <OutArgument x:TypeArguments="x:String" />
-                      </VisualBasicValue.Result>
-                    </VisualBasicValue>
+                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DecimalSeparator" />
                   </InArgument>
-                  <InOutArgument x:TypeArguments="scg:ICollection(x:Object)" x:Key="CharacterList">
+                  <OutArgument x:TypeArguments="scg:ICollection(x:Object)" x:Key="CharacterList">
                     <VisualBasicReference x:TypeArguments="scg:ICollection(x:Object)" ExpressionText="CharacterList" />
-                  </InOutArgument>
-                  <InArgument x:TypeArguments="x:Boolean" x:Key="Negate">
-                    <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Negate">
-                      <VisualBasicValue.Result>
-                        <OutArgument x:TypeArguments="x:Boolean" />
-                      </VisualBasicValue.Result>
-                    </VisualBasicValue>
-                  </InArgument>
+                  </OutArgument>
+                  <OutArgument x:TypeArguments="x:Boolean" x:Key="Negate">
+                    <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="Negate" />
+                  </OutArgument>
                 </ui:InvokeWorkflowFile.Arguments>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -185,7 +171,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:InvokeWorkflowFile>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\Calculator\ClickListOfCharacters.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" Level="{x:Null}" LogEntry="{x:Null}" LogExit="{x:Null}" Timeout="{x:Null}" UnSafe="False" WorkflowFileName="Process\Calculator\ClickListOfCharacters.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\Calculator\ClickListOfCharacters.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,138" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Process\Calculator\ClickListOfCharacters.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InArgument x:TypeArguments="scg:ICollection(x:Object)" x:Key="CharacterList">[CharacterList]</InArgument>
                   <InArgument x:TypeArguments="x:Boolean" x:Key="Negate">[Negate]</InArgument>
@@ -194,9 +180,9 @@
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
             </Sequence>
-            <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'StandardOperatorPlus'" sap:VirtualizedContainerService.HintSize="450,157" sap2010:WorkflowViewState.IdRef="NClick_3" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" Timeout="{x:Null}" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'StandardOperatorPlus'" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="88910838-f282-4e59-b5f6-03710c8bcafa" Version="V3">
               <uix:NClick.Target>
-                <uix:TargetAnchorable ContentHash="4GF4KjlgC0y9aBMwf_yVdg" CvElementArea="247, 424, 76, 51" CvTextArea="278, 443, 15, 15" CvTextArgument="+" CvType="Button" DesignTimeRectangle="248, 425, 76, 51" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="''" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='StandardOperators' cls='NamedContainerAutomationPeer' name='Standard operators' /&gt;&lt;uia automationid='plusButton' cls='Button' name='Plus' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='StandardOperators' cls='NamedContainerAutomationPeer' name='Standard operators' /&gt;&lt;uia automationid='plusButton' cls='Button' name='Plus' role='button' check:fulltext='' /&gt;" Guid="92853c92-f060-4018-a038-a0a10e4d215a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFAAAAA3CAYAAACb4M1PAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFXSURBVHhe7dtNioMwHIbxOYc38P7X8AZaXCl+LFRE0VWGv9BWa2Q+Xhgr8yx+G5t08ZAQRPLR973D7xFQtAvYtq2rqsplWYaVuq6XNq+9NgHLslwGDsPg5nnGijWxNtZo3ewR0OraAN9kPNnuXK/ER0D7YRxH7yQ83VfiLqDtc98EbE3T5PI8J6DCWhFQQEARAUUEFBFQREARAUUEFBFQREARAUUEFBFQdJmARVF4n5/tMgHDMPQ+P9tlAgZB4H1+NgKKCCgioOjtAtppaweGBfuKjUuSxPs/f4UVKCKgiIAiAoouE5A3EdHZp+2RywR8VwQUEVBEQBEBRQQUEVBEQBEBRQQUEVBEQBEBRQQUEVBweFOJu3Lfc3hXrmma5SqnbxKe7BOstdoFNHEcuzRNXdd13sn/mTWxNrfb7dHLbAIaW542KIoirNjnhfXWvdsFxM8QUNK7T26NnwSZRQw2AAAAAElFTkSuQmCC" InformativeScreenshot="c554bdbbd2897fe698615ef79e9abd2f.png" Reference="VghXUu22RkytYUIM7zleTQ/37i9NuVG30aXvqb1RWVwXw" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='Calculator' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                <uix:TargetAnchorable ContentHash="43HlcAA7FUSURdWK4qEQOg" CvElementArea="247, 424, 76, 51" CvTextArea="278, 443, 15, 15" CvTextArgument="+" CvType="Button" DesignTimeRectangle="265, 425, 82, 51" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'StandardOperatorPlus'" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='StandardOperators' cls='NamedContainerAutomationPeer' /&gt;&lt;uia automationid='plusButton' cls='Button' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='StandardOperators' cls='NamedContainerAutomationPeer' /&gt;&lt;uia automationid='plusButton' cls='Button' role='button' check:fulltext='' /&gt;" Guid="92853c92-f060-4018-a038-a0a10e4d215a" InformativeScreenshot="23fff97bc73da1a5f13ad1426b1050bc.png" Reference="VghXUu22RkytYUIM7zleTQ/37i9NuVG30aXvqb1RWVwXw" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -205,7 +191,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <Sequence sap2010:Annotation.AnnotationText="Sequence used to scope variables" DisplayName="Term2" sap:VirtualizedContainerService.HintSize="450,443" sap2010:WorkflowViewState.IdRef="Sequence_25">
+            <Sequence sap2010:Annotation.AnnotationText="Sequence used to scope variables" DisplayName="Term2" sap:VirtualizedContainerService.HintSize="450,483" sap2010:WorkflowViewState.IdRef="Sequence_25">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Default="False" Name="Negate" />
                 <Variable x:TypeArguments="scg:ICollection(x:Object)" Default="[New List(Of Object)]" Name="CharacterList" />
@@ -216,32 +202,20 @@
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile sap2010:Annotation.AnnotationText="Supplying Term2" ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\Datatransformation\ParseTermToList.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,144" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" Level="{x:Null}" LogEntry="{x:Null}" LogExit="{x:Null}" Timeout="{x:Null}" UnSafe="False" WorkflowFileName="Process\Datatransformation\ParseTermToList.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Supplying Term2" DisplayName="Process\Datatransformation\ParseTermToList.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,184" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Process\Datatransformation\ParseTermToList.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InArgument x:TypeArguments="x:String" x:Key="Term">
-                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Term2">
-                      <VisualBasicValue.Result>
-                        <OutArgument x:TypeArguments="x:String" />
-                      </VisualBasicValue.Result>
-                    </VisualBasicValue>
+                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Term2" />
                   </InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="DecimalSeparator">
-                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DecimalSeparator">
-                      <VisualBasicValue.Result>
-                        <OutArgument x:TypeArguments="x:String" />
-                      </VisualBasicValue.Result>
-                    </VisualBasicValue>
+                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="DecimalSeparator" />
                   </InArgument>
-                  <InOutArgument x:TypeArguments="scg:ICollection(x:Object)" x:Key="CharacterList">
+                  <OutArgument x:TypeArguments="scg:ICollection(x:Object)" x:Key="CharacterList">
                     <VisualBasicReference x:TypeArguments="scg:ICollection(x:Object)" ExpressionText="CharacterList" />
-                  </InOutArgument>
-                  <InArgument x:TypeArguments="x:Boolean" x:Key="Negate">
-                    <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Negate">
-                      <VisualBasicValue.Result>
-                        <OutArgument x:TypeArguments="x:Boolean" />
-                      </VisualBasicValue.Result>
-                    </VisualBasicValue>
-                  </InArgument>
+                  </OutArgument>
+                  <OutArgument x:TypeArguments="x:Boolean" x:Key="Negate">
+                    <VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="Negate" />
+                  </OutArgument>
                 </ui:InvokeWorkflowFile.Arguments>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -249,7 +223,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:InvokeWorkflowFile>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\Calculator\ClickListOfCharacters.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" Level="{x:Null}" LogEntry="{x:Null}" LogExit="{x:Null}" Timeout="{x:Null}" UnSafe="False" WorkflowFileName="Process\Calculator\ClickListOfCharacters.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\Calculator\ClickListOfCharacters.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,138" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Process\Calculator\ClickListOfCharacters.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InArgument x:TypeArguments="scg:ICollection(x:Object)" x:Key="CharacterList">[CharacterList]</InArgument>
                   <InArgument x:TypeArguments="x:Boolean" x:Key="Negate">[Negate]</InArgument>
@@ -258,12 +232,12 @@
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
             </Sequence>
-            <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'StandardOperatorEquals'" sap:VirtualizedContainerService.HintSize="450,157" sap2010:WorkflowViewState.IdRef="NClick_5" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" Timeout="{x:Null}" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'StandardOperatorEquals'" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable ContentHash="kAUoNhlUPE6E2zkcOIPnJg" CvElementArea="247, 476, 79, 54" CvType="Button" DesignTimeRectangle="248, 478, 76, 51" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="''" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='StandardOperators' cls='NamedContainerAutomationPeer' name='Standard operators' /&gt;&lt;uia automationid='equalButton' cls='Button' name='Equals' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='StandardOperators' cls='NamedContainerAutomationPeer' name='Standard operators' /&gt;&lt;uia automationid='equalButton' cls='Button' name='Equals' role='button' check:fulltext='' /&gt;" Guid="b6beceab-b7a9-44d3-863f-013ea2f5c137" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFAAAAA3CAYAAACb4M1PAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE8SURBVHhe7ds9SgNRFEBh9+BG7Oxdgopoo41LCIYUNq7BlcQfRMG/OFEQOy2FTLC2GfunTxAd3gsyHggjOcXX3fuKA8NUd66qqqC/MyCUBCwHx2HYXQsHS/P6odhZDaPLfq1VVAt4tr6QXda3863FfMDyo25uQanx8DQNWHRWssNK3e1upgFzg5rMgJABIQNCBoQMCBkQMiBkQMiAkAEhA0IGhAwIGRAyIGRAyICQAaFWBXx9ug9vL8+NxJ3cW9PSqoAPe9vhcb/XSNzJvTUtrQr4HxkQalVAP2HIn8gMMiBkQMiAkAEhA0IGhAwIGRAyIGRAyICQASEDQgaEDAgZEDIglAQsOsvZQaVuextpwPL6KDusVHl1mAaMvBf+3cR74S+ji/7ndXZueZbFK/7xzUmtVZQEVDMGRKrwDtCQ/VrjEuCkAAAAAElFTkSuQmCC" InformativeScreenshot="5a1c1e1003f3058d8bb6d1958d61c8ee.png" Reference="VghXUu22RkytYUIM7zleTQ/BG8H0tqEXUmL6WPycQvtSw" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='Calculator' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NGetText ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Get Text 'CalculatorResults'" sap:VirtualizedContainerService.HintSize="450,157" sap2010:WorkflowViewState.IdRef="NGetText_1" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScrapingOptions="{x:Null}" TextString="[Result]" Timeout="{x:Null}" Version="V3" WordsInfo="{x:Null}">
+            <uix:NGetText DisplayName="Get Text 'CalculatorResults'" sap:VirtualizedContainerService.HintSize="450,197" sap2010:WorkflowViewState.IdRef="NGetText_1" TextString="[Result]" Version="V3">
               <uix:NGetText.Target>
                 <uix:TargetAnchorable ContentHash="QYwZqKbpPkCEA1KImlNlCQ" CvTextArea="289, 118, 27, 39" CvTextArgument="2" CvType="Text" DesignTimeRectangle="8, 104, 320, 75" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'2'" FullSelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='CalculatorResults' role='text' /&gt;" FuzzySelectorArgument="&lt;uia cls='LandmarkTarget' /&gt;&lt;uia automationid='CalculatorResults' role='text' check:fulltext='2' /&gt;" Guid="36967884-70ae-4f54-8b7f-b9901c381636" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUQAAABPCAYAAACTWryxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALNSURBVHhe7d29URtRFIZhSqAFYgeeIXAFJI4c0AIl0AEVUAENUAEF0AAVUAMFyP7wwWOWs7D6gV2NnuBJpLtL9s4eXelydPTtx+r7z1+rp6cngIOUBqaFgggcPEEEKIIIUAQRoAgiQBFEgCKIAEUQAYogAhRBBCiCCFAEEaAIIkARRIAiiABFEAGKIAIUQQQogggs0uPj4+ru7m51fX29urq6+iev5b3umm0JIrAoCd75+fmfKB29K2uytrvHpgQRWIQ89U0J4dDl5WV7v00IIjC7xPD09PRN7Ka6uLho77suQQRm9VEM897Z2dmz7v0XNzc37f3XIYjArMbG5IzCDw8Pr9Ymnnm9W39ycvJq7SYEEZjN7e3tm7DFR0972W3ursv9uvVTCSIwmy5s+ZpNt3YoT4TDa3O/bu1UggjMKmNxNkWOj4+fPy/s1nS6UTuvdWunEkRgEfL54PAzw/d0T5fZeOnWTiWIwF7qNlcEEThI3ddwfIYIHJyM1sMYhl1m4OB043I2Zbq16xBEYK/kQIdhDGPbcTkEEdgb9/f3z0+CwxjmO4nZpe6uWYcgAnthLIaxq2PABBFYvPx6pQth7OJQhxeCCCxWxuD3zkjcZQxDEIFFyojc/V45MjrvOoYhiMDiJHZdCCORTCy767YliMCi5KCHLoSR8XkXu8ljBBFYjLEYftaIPCSIwCKMnYSdI8E+a0QeEkRgdmO/PkkMP3NEHhJEYHbdbvJXxzAEEZjV2I7yV43J/xNEYFbdF6/X+VcCuySIwKyGMYyM0Dm9ZhPb/K5ZEIHZjB30uo1EsftbUwgiMJux3eVtCCKwlwQRoAgiwEIJIkARRIAiiABFEAGKIAIUQQQogghQBBGgCCJAEUSAIogARRABiiACFEEEKIIIUAQRoAgiQBFEgCKIAEUQAYogAhRBBCiCCFAEEaAIIkARRIDyN4g/Vr8BoKEiZEU+qHYAAAAASUVORK5CYII=" InformativeScreenshot="94b657cced590197cf8f68c13419e9fc.png" Reference="VghXUu22RkytYUIM7zleTQ/BPF20wJwTk2TXVGFOmoYCA" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' title='Calculator' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
               </uix:NGetText.Target>
