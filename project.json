@@ -15,7 +15,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.10.0.0",
-  "projectVersion": "0.2.3",
+  "projectVersion": "0.2.5",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -49,7 +49,8 @@
         "RnD/RnD_Localization.xaml",
         "RnD/RnD_gitkeep.xaml",
         "RnD/RnD_InvokeCodedWorkflow.xaml",
-        "RnD/RnD_StringContainsNegate.xaml"
+        "RnD/RnD_StringContainsNegate.xaml",
+        "RnD/RnD_Numberformat.xaml"
       ]
     },
     "fileInfoCollection": [

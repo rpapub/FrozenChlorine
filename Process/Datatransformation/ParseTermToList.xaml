@@ -4,8 +4,9 @@
     <x:Property Name="DecimalSeparator" Type="InArgument(x:String)" />
     <x:Property Name="CharacterList" Type="OutArgument(scg:ICollection(x:Object))" />
     <x:Property Name="Negate" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="CurrentDecimalSeparator" Type="OutArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>687,2050</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1180,1668</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -105,27 +106,35 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="fsdf" DisplayName="ParseTermToList" sap:VirtualizedContainerService.HintSize="608,1985" sap2010:WorkflowViewState.IdRef="Sequence_10">
+  <Sequence sap2010:Annotation.AnnotationText="Takes the input term and decimal seperator and outputs a loopable datatype.&#xA;Uses current system regional settings." DisplayName="ParseTermToList" sap:VirtualizedContainerService.HintSize="608,1603" sap2010:WorkflowViewState.IdRef="Sequence_10">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="546,122" sap2010:WorkflowViewState.IdRef="Assign_7">
+    <Assign sap2010:Annotation.AnnotationText="out argument explicitly initialized" DisplayName="Initialize CharacterList" sap:VirtualizedContainerService.HintSize="546,99" sap2010:WorkflowViewState.IdRef="Assign_7">
       <Assign.To>
         <OutArgument x:TypeArguments="scg:ICollection(x:Object)">[CharacterList]</OutArgument>
       </Assign.To>
       <Assign.Value>
         <InArgument x:TypeArguments="scg:ICollection(x:Object)">[New List(Of Object)]</InArgument>
       </Assign.Value>
-    </Assign>
-    <If Condition="[Term.ToString.Contains(&quot;-&quot;)]" DisplayName="If Negative" sap:VirtualizedContainerService.HintSize="546,468" sap2010:WorkflowViewState.IdRef="If_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <If Condition="[Term.ToString.Contains(&quot;-&quot;)]" DisplayName="If Negative Assign Negate True" sap:VirtualizedContainerService.HintSize="546,57" sap2010:WorkflowViewState.IdRef="If_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -147,24 +156,31 @@
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,100" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,22" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </Sequence>
       </If.Else>
     </If>
-    <Assign DisplayName="Re-Assign Term to Sanitized String" sap:VirtualizedContainerService.HintSize="546,122" sap2010:WorkflowViewState.IdRef="Assign_6">
+    <Assign DisplayName="Re-Assign Term to Sanitized String" sap:VirtualizedContainerService.HintSize="546,57" sap2010:WorkflowViewState.IdRef="Assign_8">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[Term]</OutArgument>
       </Assign.To>
       <Assign.Value>
         <InArgument x:TypeArguments="x:String">[New String(Term.Where(Function(c) Char.IsDigit(c) OrElse c.ToString.Equals(DecimalSeparator.Substring(0, 1))).ToArray())]</InArgument>
       </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each Character in Term" sap:VirtualizedContainerService.HintSize="546,990" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Term.ToString]">
+    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each Character in Term" sap:VirtualizedContainerService.HintSize="546,982" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Term.ToString]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -231,6 +247,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEach>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="546,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Parsed into CharacterList of type &quot; &amp; CharacterList.GetType().ToString &amp; &quot; the items &quot; &amp; String.Join(&quot; &quot;, CharacterList)]" />
+    <Assign sap:VirtualizedContainerService.HintSize="546,114" sap2010:WorkflowViewState.IdRef="Assign_9">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[CurrentDecimalSeparator]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[System.Globalization.CultureInfo.InstalledUICulture.NumberFormat.NumberDecimalSeparator]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:LogMessage DisplayName="Log Message TRACE end" sap:VirtualizedContainerService.HintSize="546,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Parsed into CharacterList of type &quot; &amp; CharacterList.GetType().ToString &amp; &quot; the items &quot; &amp; String.Join(&quot; &quot;, CharacterList) &amp; &quot; with CurrentDecimalSeparator now being: &quot; &amp; CurrentDecimalSeparator.ToString]" />
   </Sequence>
 </Activity>

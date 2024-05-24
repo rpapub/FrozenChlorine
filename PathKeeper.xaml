@@ -2,12 +2,13 @@
   <x:Members>
     <x:Property Name="DecimalSeparator" Type="InArgument(x:String)" />
     <x:Property Name="ConfigFile" Type="InArgument(x:String)" />
+    <x:Property Name="IsSuccessful" Type="OutArgument(x:Boolean)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
   <sap2010:Annotation.AnnotationText>UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
-  <sap:VirtualizedContainerService.HintSize>808,880</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>596,962</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Canary_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -50,6 +51,7 @@
       <x:String>UiPath.Platform.Triggers</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
       <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -105,6 +107,8 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
       <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -112,7 +116,7 @@
       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Derived from the concept of &quot;canaries&quot; in microservice deployment strategies, this UiPath workflow acts as a proactive validation tool for UI elements, mostly from a dependency on a Object Repository library.&#xA;&#xA;This workflow will&#xA;- open the target application&#xA;- use the &quot;Highlight&quot; activity on a range of elements&#xA;- fail if an element is not detected" DisplayName="Canary" sap:VirtualizedContainerService.HintSize="512,815" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Derived from the concept of &quot;canaries&quot; in microservice deployment strategies, this UiPath workflow acts as a proactive validation tool for UI elements, mostly from a dependency on a Object Repository library.&#xA;&#xA;This workflow will&#xA;- open the target application&#xA;- use the &quot;Highlight&quot; activity on a range of elements&#xA;- fail if an element is not detected" DisplayName="Canary" sap:VirtualizedContainerService.HintSize="512,897" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
     </Sequence.Variables>
@@ -122,26 +126,26 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\Initialization.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="450,153" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Process\Initialization.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\Initialization.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="450,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Process\Initialization.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InOutArgument x:TypeArguments="x:String" x:Key="DecimalSeparator">[DecimalSeparator]</InOutArgument>
         <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="Config">[Config]</InOutArgument>
         <InArgument x:TypeArguments="x:String" x:Key="ConfigFile">[ConfigFile]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <Sequence sap:VirtualizedContainerService.HintSize="450,306" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="450,282" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Standard" sap:VirtualizedContainerService.HintSize="388,65" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="20dbd1b6-8c74-45da-8ee8-bb8c481ed58d" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Standard" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="20dbd1b6-8c74-45da-8ee8-bb8c481ed58d" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,452" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,444" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="CalculatorMode" />
               </Sequence.Variables>
@@ -150,7 +154,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NGetText DisplayName="Get Text 'mode'" sap:VirtualizedContainerService.HintSize="354,197" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="20dbd1b6-8c74-45da-8ee8-bb8c481ed58d" TextString="[CalculatorMode]" Version="V3">
+              <uix:NGetText DisplayName="Get Text 'mode'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="20dbd1b6-8c74-45da-8ee8-bb8c481ed58d" TextString="[CalculatorMode]" Version="V3">
                 <uix:NGetText.Target>
                   <uix:TargetAnchorable ContentHash="QE_1tMNrLECjHsVa1nxIYA" CvTextArea="54, 46, 83, 19" CvTextArgument="Standard" CvType="Text" DesignTimeRectangle="56, 42, 82, 27" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'mode'" FullSelectorArgument="&lt;uia automationid='NavView' /&gt;&lt;uia automationid='Header' cls='TextBlock' role='text' /&gt;" FuzzySelectorArgument="&lt;uia automationid='NavView' /&gt;&lt;uia automationid='Header' cls='TextBlock' role='text' check:fulltext='Standard' /&gt;" Guid="44e6b48d-e570-4831-80f6-22a30b532301" InformativeScreenshot="4013949fcfeba7ba420a4dbd78166849.png" Reference="VghXUu22RkytYUIM7zleTQ/iAQl26POP0mJM3m5npvJUA" ScopeSelectorArgument="&lt;wnd app='applicationframehost.exe' appid='Microsoft.WindowsCalculator_8wekyb3d8bbwe!App' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                 </uix:NGetText.Target>
@@ -169,7 +173,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uix:NApplicationCard>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Standard" sap:VirtualizedContainerService.HintSize="388,65" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="1096f6b6-aac3-439b-9dea-41889938f24f" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Standard" sap:VirtualizedContainerService.HintSize="388,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="1096f6b6-aac3-439b-9dea-41889938f24f" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
@@ -418,10 +422,18 @@
         </sap:WorkflowViewStateService.ViewState>
       </uix:NApplicationCard>
     </Sequence>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\Teardown.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="450,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Process\Teardown.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\Teardown.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="450,145" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Process\Teardown.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
+    <Assign sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Boolean">[IsSuccessful]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+      </Assign.Value>
+    </Assign>
   </Sequence>
 </Activity>

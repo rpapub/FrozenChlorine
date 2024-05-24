@@ -2,10 +2,9 @@
   <x:Members>
     <x:Property Name="CharacterList" Type="InArgument(scg:ICollection(x:Object))" />
     <x:Property Name="Negate" Type="InArgument(x:Boolean)" />
-    <x:Property Name="DecimalSeparator" Type="InArgument(x:String)" />
-    <x:Property Name="Number" Type="InArgument(x:String)" />
+    <x:Property Name="CurrentDecimalSeparator" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>808,3111</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>774,3086</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -102,38 +101,38 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="hij&#xA;" sap:VirtualizedContainerService.HintSize="784,3046" sap2010:WorkflowViewState.IdRef="Sequence_21">
+  <Sequence sap2010:Annotation.AnnotationText="loops the list of characters to click and handles decimal separator and negation.&#xA;" sap:VirtualizedContainerService.HintSize="784,3021" sap2010:WorkflowViewState.IdRef="Sequence_21">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="722,1956" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[CharacterList]">
+    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="722,1931" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[CharacterList]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="currentItem" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="688,1752" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="688,1735" sap2010:WorkflowViewState.IdRef="Sequence_16">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard sap2010:Annotation.AnnotationText="Never Open, Never Close" AttachMode="ByInstance" CloseMode="Never" DisplayName="Standard" sap:VirtualizedContainerService.HintSize="626,1667" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="535d6259-5ece-417b-8e81-d982a795e8ec" Version="V2">
+            <uix:NApplicationCard sap2010:Annotation.AnnotationText="Never Open, Never Close" AttachMode="ByInstance" CloseMode="Never" DisplayName="Standard" sap:VirtualizedContainerService.HintSize="626,1650" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="535d6259-5ece-417b-8e81-d982a795e8ec" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1353" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,1336" sap2010:WorkflowViewState.IdRef="Sequence_15">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[currentItem IsNot Nothing AndAlso currentItem.ToString.Length = 1 AndAlso Char.IsDigit(CChar(currentItem.ToString))]" DisplayName="If Number" sap:VirtualizedContainerService.HintSize="530,696" sap2010:WorkflowViewState.IdRef="If_3">
+                    <If Condition="[currentItem IsNot Nothing AndAlso currentItem.ToString.Length = 1 AndAlso Char.IsDigit(CChar(currentItem.ToString))]" DisplayName="If Number" sap:VirtualizedContainerService.HintSize="530,679" sap2010:WorkflowViewState.IdRef="If_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -141,7 +140,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,418" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,409" sap2010:WorkflowViewState.IdRef="Sequence_11">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="Number" />
                           </Sequence.Variables>
@@ -150,7 +149,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap2010:Annotation.AnnotationText="expected by Object Repository descriptor library" DisplayName="Assign Number variable" sap:VirtualizedContainerService.HintSize="434,153" sap2010:WorkflowViewState.IdRef="Assign_8">
+                          <Assign sap2010:Annotation.AnnotationText="expected by Object Repository descriptor library" DisplayName="Assign Number variable" sap:VirtualizedContainerService.HintSize="434,144" sap2010:WorkflowViewState.IdRef="Assign_8">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[Number]</OutArgument>
                             </Assign.To>
