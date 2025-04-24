@@ -4,18 +4,18 @@
   "description": "RPA UiPath process automating the Windows Calculator App",
   "main": "StandardCalculator.xaml",
   "dependencies": {
-    "LuckyLawrencium": "0.1.4",
-    "UiPath.CodedWorkflows": "[23.10.5]",
-    "UiPath.Excel.Activities": "[2.22.3]",
-    "UiPath.System.Activities.Runtime": "24.3.1",
-    "UiPath.Testing.Activities": "[23.10.1]",
-    "UiPath.UIAutomation.Activities.Runtime": "23.10.11"
+    "LuckyLawrencium": "0.2.0",
+    "UiPath.CodedWorkflows": "[24.4.2]",
+    "UiPath.Excel.Activities": "[2.23.3-preview]",
+    "UiPath.System.Activities.Runtime": "24.5.0-preview",
+    "UiPath.Testing.Activities": "[24.4.0-preview]",
+    "UiPath.UIAutomation.Activities.Runtime": "24.4.2-preview"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.10.0.0",
-  "projectVersion": "0.2.5",
+  "projectVersion": "0.2.170780471",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -55,24 +55,31 @@
     },
     "fileInfoCollection": [
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "68d26466-0a03-4220-b0a1-78086d128f08",
         "testCaseType": "TestCase",
         "fileName": "Tests\\GUI\\TestCase_PathKeeper.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "3721f83d-b388-477b-b370-af2786b914b2",
         "dataVariationFilePath": ".variations\\Testdata_StandardOperations.json",
         "testCaseType": "TestCase",
         "fileName": "Tests\\end-to-end\\TestCase_EndToEnd_StandardCalculator.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "1a2328b8-9cb2-436d-b19f-34834754941b",
         "dataVariationFilePath": ".variations\\Testdata_Unit_ParseTermToList.json",
         "testCaseType": "TestCase",
         "fileName": "Tests\\unit\\TestCase_Unit_ParseTermToList.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "cf475847-43a9-4153-989e-90ed9e3d4cbd",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\module\\TestCase_InitAllApplications.xaml"
       }
     ],
     "modernBehavior": false,
@@ -179,12 +186,6 @@
           "hasDefault": false
         }
       ],
-      "output": []
-    },
-    {
-      "filePath": "Framework\\InitAllApplications.cs",
-      "uniqueId": "75d0b66b-f237-4b4b-9185-4aa6aaf0202c",
-      "input": [],
       "output": []
     }
   ],
