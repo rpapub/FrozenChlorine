@@ -1,20 +1,21 @@
 {
   "name": "FrozenChlorine",
-  "projectId": "af94cdb4-101f-46ed-a796-3ee0cdcdf0f5",
+  "projectId": "f4aa3834-01a5-4557-a74a-d6d97b0cfbdf",
   "description": "RPA UiPath process automating the Windows Calculator App",
   "main": "StandardCalculator.xaml",
   "dependencies": {
-    "LuckyLawrencium": "0.1.3",
-    "UiPath.Excel.Activities": "[2.20.2]",
-    "UiPath.System.Activities": "[23.10.2]",
-    "UiPath.Testing.Activities": "[23.10.0]",
-    "UiPath.UIAutomation.Activities": "[23.10.3]"
+    "LuckyLawrencium": "0.2.0",
+    "UiPath.CodedWorkflows": "[24.4.2]",
+    "UiPath.Excel.Activities": "[2.23.3-preview]",
+    "UiPath.System.Activities.Runtime": "24.5.0-preview",
+    "UiPath.Testing.Activities": "[24.4.0-preview]",
+    "UiPath.UIAutomation.Activities.Runtime": "24.4.2-preview"
   },
   "webServices": [],
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.10.0.0",
-  "projectVersion": "0.2.2",
+  "projectVersion": "0.2.170780471",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -45,47 +46,146 @@
     "processOptions": {
       "ignoredFiles": [
         "RnD/RnD_ObjRepTests.xaml",
-        "RnD/RnD_Localization.xaml"
+        "RnD/RnD_Localization.xaml",
+        "RnD/RnD_gitkeep.xaml",
+        "RnD/RnD_InvokeCodedWorkflow.xaml",
+        "RnD/RnD_StringContainsNegate.xaml",
+        "RnD/RnD_Numberformat.xaml"
       ]
     },
     "fileInfoCollection": [
       {
-        "editingStatus": "InProgress",
-        "testCaseId": "1beafcc0-2160-41b7-b145-ca08e6542b7c",
+        "editingStatus": "Publishable",
+        "testCaseId": "68d26466-0a03-4220-b0a1-78086d128f08",
         "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "Tests\\TestCase_PathKeeper.xaml"
+        "fileName": "Tests\\GUI\\TestCase_PathKeeper.xaml"
       },
       {
-        "editingStatus": "InProgress",
-        "testCaseId": "025c61cf-9dc9-43e8-a49f-dc143230bfa5",
-        "dataVariationFilePath": ".variations\\Testdata_Unit_ParseTermToList.json",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "Tests\\TestCase_Unit_ParseTermToList.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "3ca449d9-71d4-41c4-aebe-35716e4b84ce",
+        "editingStatus": "Publishable",
+        "testCaseId": "3721f83d-b388-477b-b370-af2786b914b2",
         "dataVariationFilePath": ".variations\\Testdata_StandardOperations.json",
         "testCaseType": "TestCase",
-        "fileName": "Tests\\TestCase_EndToEnd_StandardCalculator.xaml"
+        "fileName": "Tests\\end-to-end\\TestCase_EndToEnd_StandardCalculator.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1a2328b8-9cb2-436d-b19f-34834754941b",
+        "dataVariationFilePath": ".variations\\Testdata_Unit_ParseTermToList.json",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\unit\\TestCase_Unit_ParseTermToList.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "cf475847-43a9-4153-989e-90ed9e3d4cbd",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\module\\TestCase_InitAllApplications.xaml"
       }
     ],
+    "modernBehavior": false,
     "saveToCloud": false
+  },
+  "arguments": {
+    "input": [
+      {
+        "name": "Term1",
+        "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+        "required": false,
+        "hasDefault": false
+      },
+      {
+        "name": "Term2",
+        "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+        "required": false,
+        "hasDefault": false
+      },
+      {
+        "name": "Operation",
+        "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+        "required": false,
+        "hasDefault": false
+      },
+      {
+        "name": "DecimalSeparator",
+        "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+        "required": false,
+        "hasDefault": false
+      },
+      {
+        "name": "ConfigFile",
+        "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+        "required": false,
+        "hasDefault": false
+      }
+    ],
+    "output": [
+      {
+        "name": "Result",
+        "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+      }
+    ]
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
       "filePath": "StandardCalculator.xaml",
       "uniqueId": "2d8020ee-2064-405a-a8da-392bd5a244fd",
-      "input": [],
-      "output": []
+      "input": [
+        {
+          "name": "Term1",
+          "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": false
+        },
+        {
+          "name": "Term2",
+          "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": false
+        },
+        {
+          "name": "Operation",
+          "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": false
+        },
+        {
+          "name": "DecimalSeparator",
+          "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": false
+        },
+        {
+          "name": "ConfigFile",
+          "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": false
+        }
+      ],
+      "output": [
+        {
+          "name": "Result",
+          "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+        }
+      ]
     },
     {
       "filePath": "PathKeeper.xaml",
       "uniqueId": "21b19605-b935-487b-b829-06fdb3ae9a19",
-      "input": [],
+      "input": [
+        {
+          "name": "DecimalSeparator",
+          "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": false
+        },
+        {
+          "name": "ConfigFile",
+          "type": "System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+          "required": false,
+          "hasDefault": false
+        }
+      ],
       "output": []
     }
   ],

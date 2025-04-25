@@ -1,5 +1,6 @@
 {
   "Tags": [],
-  "SeparateRuntimeDependencies": false,
-  "IncludeSources": true
+  "SeparateRuntimeDependencies": true,
+  "IncludeSources": true,
+  "ConnectorKeys": []
 }
