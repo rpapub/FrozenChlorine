@@ -1,8 +1,8 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="PathKeeper" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="DecimalSeparator" Type="InArgument(x:String)" />
-    <x:Property Name="ConfigFile" Type="InArgument(x:String)" />
-    <x:Property Name="IsSuccessful" Type="OutArgument(x:Boolean)" />
+    <x:Property sap2010:Annotation.AnnotationText="Depends on Windows (user) settings&#xD;&#xA;@ignore CPRIMA-NMG-001" Name="DecimalSeparator" Type="InArgument(x:String)" />
+    <x:Property sap2010:Annotation.AnnotationText="Path and Filename of the config file.&#xD;&#xA;@ignore CPRIMA-NMG-001" Name="ConfigFile" Type="InArgument(x:String)" />
+    <x:Property sap2010:Annotation.AnnotationText="Visible in UiPath Orchestrator job view at quick glance&#xD;&#xA;@ignore CPRIMA-NMG-001" Name="IsSuccessful" Type="OutArgument(x:Boolean)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
@@ -35,6 +35,7 @@
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Enums</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -99,7 +100,7 @@
       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Derived from the concept of &quot;canaries&quot; in microservice deployment strategies, this UiPath workflow acts as a proactive validation tool for UI elements, mostly from a dependency on a Object Repository library.&#xA;&#xA;The PathKeeper will&#xA;- open the target application&#xA;- use the &quot;Highlight&quot; activity on a range of elements&#xA;- fail if an element is not detected" DisplayName="PathKeeper" sap:VirtualizedContainerService.HintSize="1486.6666666666667,3310.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Derived from the concept of &quot;canaries&quot; in microservice deployment strategies, this UiPath workflow acts as a proactive validation tool for UI elements, mostly from a dependency on a Object Repository library.&#xA;&#xA;The PathKeeper will&#xA;- open the target application&#xA;- use the &quot;Highlight&quot; activity on a range of elements&#xA;- fail if an element is not detected" DisplayName="PathKeeper" sap:VirtualizedContainerService.HintSize="519,3481" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
     </Sequence.Variables>
@@ -109,26 +110,27 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\Initialization.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="518,210" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Process\Initialization.xaml">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="519,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Going to execute PathKeeper: Standalone canary test in RPA that highlights critical UI elements to detect environment or selector faults early.&quot;]" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\Initialization.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="518.8571428571429,212" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Process\Initialization.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InOutArgument x:TypeArguments="x:String" x:Key="DecimalSeparator">[DecimalSeparator]</InOutArgument>
         <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="Config">[Config]</InOutArgument>
         <InArgument x:TypeArguments="x:String" x:Key="ConfigFile">[ConfigFile]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="518,2681.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="518.8571428571429,2682.8571428571427" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Standard Mode a" sap:VirtualizedContainerService.HintSize="484,756" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="20dbd1b6-8c74-45da-8ee8-bb8c481ed58d" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Standard Mode a" sap:VirtualizedContainerService.HintSize="484.57142857142856,757.1428571428571" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="20dbd1b6-8c74-45da-8ee8-bb8c481ed58d" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do Get Mode" sap:VirtualizedContainerService.HintSize="450,426.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do Get Mode" sap:VirtualizedContainerService.HintSize="450.2857142857143,426.2857142857143" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="CalculatorMode" />
               </Sequence.Variables>

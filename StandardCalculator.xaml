@@ -88,7 +88,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Description: &#xA;    This UiPath workflow is designed to perform basic arithmetic operations using a virtual calculator interface. It primarily handles addition but is structured to be extended to other operations. The workflow takes two terms and an operation type as input, processes them using the calculator, and returns the result.&#xA;&#xA;    Key Properties:&#xA;    - Term1: First input term for the operation.&#xA;    - Term2: Second input term for the operation.&#xA;    - Result: The result of the operation, returned as an output.&#xA;    - Operation: The type of arithmetic operation to be performed (e.g., addition).&#xA;    - DecimalSeparator: Character used as a decimal separator.&#xA;&#xA;    Main Activities:&#xA;    - Initialization of the environment and killing any pre-existing processes related to the calculator.&#xA;    - Setting up the decimal separator based on regional settings if not supplied.&#xA;    - Flow control to handle different types of operations (currently set up for addition).&#xA;    - Invoking the 'AdditionOf2Terms' workflow to perform the addition.&#xA;    - Logging the final result.&#xA;&#xA;Purpose: &#xA;    To automate the process of performing basic arithmetic operations in scenarios where manual data entry in applications like calculators is required. Ideal for automating tasks that involve calculations in GUI-based applications.&#xA;&#xA;Usage: &#xA;    Provide the two terms and the type of operation to be performed. The workflow will handle the operation in the targeted application and return the result.&#xA;&#xA;Author: Christian Prior-Mamulyan&#xA;Date: 2024-01-07" DisplayName="StandardCalculator Sequence" sap:VirtualizedContainerService.HintSize="696,1713" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Description&#xD;&#xA;This UiPath workflow is designed to perform basic arithmetic operations using a virtual calculator interface. It primarily handles addition but is structured to be extended to other operations. The workflow takes two terms and an operation type as input, processes them using the calculator, and returns the result.&#xA;&#xA;    Key Properties:&#xA;    - Term1: First input term for the operation.&#xA;    - Term2: Second input term for the operation.&#xA;    - Result: The result of the operation, returned as an output.&#xA;    - Operation: The type of arithmetic operation to be performed (e.g., addition).&#xA;    - DecimalSeparator: Character used as a decimal separator.&#xA;&#xA;    Main Activities:&#xA;    - Initialization of the environment and killing any pre-existing processes related to the calculator.&#xA;    - Setting up the decimal separator based on regional settings if not supplied.&#xA;    - Flow control to handle different types of operations (currently set up for addition).&#xA;    - Invoking the 'AdditionOf2Terms' workflow to perform the addition.&#xA;    - Logging the final result.&#xA;&#xA;Purpose: &#xA;    To automate the process of performing basic arithmetic operations in scenarios where manual data entry in applications like calculators is required. Ideal for automating tasks that involve calculations in GUI-based applications.&#xA;&#xA;Usage: &#xA;    Provide the two terms and the type of operation to be performed. The workflow will handle the operation in the targeted application and return the result.&#xA;&#xA;Author: Christian Prior-Mamulyan&#xA;Date: 2024-01-07" DisplayName="StandardCalculator Sequence" sap:VirtualizedContainerService.HintSize="634.2857142857143,1372.5714285714287" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
     </Sequence.Variables>
@@ -98,37 +98,42 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Process\Initialization.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="634,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Process\Initialization.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Initializes the DecimalSeparator with fallback to InstalledUICulture,&#xA;reads the config file into a variable of type Dictionary&lt;String,Object&gt;,&#xA;kills potentially leftover processes and initializes the applications." DisplayName="Process\Initialization.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="634.2857142857143,326.85714285714283" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Process\Initialization.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InOutArgument x:TypeArguments="x:String" x:Key="DecimalSeparator">[DecimalSeparator]</InOutArgument>
         <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="Config">[Config]</InOutArgument>
         <InArgument x:TypeArguments="x:String" x:Key="ConfigFile">[ConfigFile]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
-    <Flowchart sap2010:Annotation.AnnotationText="todo: operations other than addition" sap:VirtualizedContainerService.HintSize="634,668" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart sap2010:Annotation.AnnotationText="todo: operations other than addition" sap:VirtualizedContainerService.HintSize="634.2857142857143,688" sap2010:WorkflowViewState.IdRef="Flowchart_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
           <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
-          <av:Size x:Key="ShapeSize">60,75</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,106.5</av:PointCollection>
+          <av:Size x:Key="ShapeSize">50.285714285714285,50.285714285714285</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">295.14285714285717,52.785714285714285 295.14285714285717,82.78571428571428 295,82.78571428571428 295,106.5</av:PointCollection>
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Flowchart.StartNode>
         <x:Reference>__ReferenceID1</x:Reference>
       </Flowchart.StartNode>
-      <FlowSwitch x:TypeArguments="x:String" x:Name="__ReferenceID1" DisplayName="Flow Switch" Expression="[Operation]" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_2">
+      <FlowSwitch x:TypeArguments="x:String" x:Name="__ReferenceID1" DisplayName="Flow Switch" Expression="[Operation]" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_2">
         <FlowSwitch.Default>
           <FlowStep x:Name="__ReferenceID0">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <av:Point x:Key="ShapeLocation">0,213.52</av:Point>
-                <av:Size x:Key="ShapeSize">200,52</av:Size>
+                <av:Size x:Key="ShapeSize">109.71428571428571,69.71428571428571</av:Size>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="AdditionOf2Terms.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" Level="Info" LogEntry="WithArguments" LogExit="WithArguments" UnSafe="False" WorkflowFileName="Process\AdditionOf2Terms.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="AdditionOf2Terms.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="109.71428571428571,69.71428571428571" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" Level="Info" LogEntry="WithArguments" LogExit="WithArguments" UnSafe="False" WorkflowFileName="Process\AdditionOf2Terms.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="DecimalSeparator">[DecimalSeparator]</InArgument>
@@ -148,8 +153,8 @@
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">265,106.5</av:Point>
-            <av:Size x:Key="ShapeSize">70,87</av:Size>
-            <av:PointCollection x:Key="Default">265,150 100,150 100,213.52</av:PointCollection>
+            <av:Size x:Key="ShapeSize">60,60</av:Size>
+            <av:PointCollection x:Key="Default">265,136.5 235,136.5 235,248.37714285714287 109.71428571428571,248.37714285714287</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </FlowSwitch>
